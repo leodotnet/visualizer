@@ -1,0 +1,77 @@
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+    color: red;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+.entity_positive {
+    color: red;
+}
+
+.entity_positive_incorrect {
+    color: red;
+    background-color: lightgray;
+}
+
+.entity_neutral{
+    color: gray;
+}
+
+.entity_neutral_incorrect{
+    color: black;
+    background-color: lightgray;
+    
+}
+
+.entity_negative {
+    color: blue;
+}
+
+.entity_negative_incorrect {
+    color: blue;
+    background-color: lightgray;
+}
+
+.sentiment_word_positive {
+    background-color: orange;
+}
+
+.sentiment_word_negative {
+    background-color: green;
+}
